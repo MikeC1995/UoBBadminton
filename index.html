@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <base href="/">
+    <title>UoB Badminton</title>
+    <meta name="description" content="University of Bristol Badminton">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  </head>
+  <body ng-app="app" ng-controller="editController">
+    <style>
+      ul li {
+        font-size: 24px;
+      }
+    </style>
+
+    <h1>UoB Badminton</h1>
+    <h2>Committee</h2>
+    <ul>
+      <li ng-repeat="name in committeeNames">{{name}}</li>
+    </ul>
+    <img src="images/badminton.jpg">
+
+    <script src="node_modules/angular/angular.min.js"></script>
+    <script src="app/EDIT-ME.js"></script>
+  </body>
+</html>
